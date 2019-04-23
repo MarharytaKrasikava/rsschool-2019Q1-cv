@@ -1,0 +1,218 @@
+@font-face {
+    font-family: "Bitter-Bold";
+    src: url("Bitter-Bold.otf")
+}
+
+@font-face {
+    font-family: "Bitter-Italic";
+    src: url("Bitter-Italic.otf")
+}
+
+@font-face {
+    font-family: "Titillium-Regular";
+    src: url("Titillium-Regular.otf")
+}
+
+.wrapper {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.header {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(221, 203, 101);    
+}
+.header h1{
+    width: 650px;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    text-align: left;
+    color: rgb(60, 37, 73);
+    font-family: "Bitter-Bold";
+    font-size: 35px;
+}
+
+.header h3 {
+    width: 500px;
+    height: 20px;
+    padding: 10px 30px;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    text-align: left;
+    color: white;
+    font-family: "Bitter-Italic";
+    background-color: rgb(60, 37, 73);
+}
+
+.summary {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(60, 37, 73);
+    opacity: 0.7;
+    margin: 0;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    z-index: 2;
+}
+
+.summary p {
+    margin-left: 350px;
+    padding: 0;
+    text-align: justify;
+    color: white;
+    line-height: 1.5em;
+    font-family: "Bitter-Italic";
+}
+
+.leftcolumn {
+    margin: 0;
+    width: 300px;
+    height: 600px;
+    /*display: flex;*/
+    background-color: rgb(60, 37, 73);
+    float: left;    
+    color: white;
+    /*flex-direction: column; */ 
+}
+
+.leftcolumn img {
+    width: 300px;
+    position: absolute;
+    top: 0;
+}
+
+.leftcolumn h4 {
+    font-family: "Bitter-Bold";
+    font-size: 23px;
+    padding: 0 10px 0 70px;
+    width: 200px;
+    margin: 10px 0 20px 0;
+    color: rgb(221, 203, 101);
+    text-align: right;
+}
+
+.leftcolumn .line {
+    height: 2px;
+    width: 280px;
+    margin-left: 20px;
+    background-color:rgb(221, 203, 101);
+}
+    
+.leftcolumn ul li {
+    font-size: 14px;        
+    list-style-type: none;
+    text-align: right;
+    padding: 5px 25px;
+    font-family: "Titillium-Regular";
+}
+
+.leftcolumn strong {
+    margin-bottom: 20px;
+    color:rgb(221, 203, 101);
+    font-size: 16px;
+}
+
+.leftcolumn a {
+    /*text-decoration: none;*/
+    color: rgb(109, 143, 216);
+}
+
+.leftcolumn .progress1 {
+    width: 150px;
+    height: 20px;
+    margin-left: 110px;
+    background-color:  rgb(179, 145, 199);
+}
+
+.leftcolumn .progress2 {
+    width: 120px;
+    height: 20px;
+    margin-left: 140px;
+    background-color:   rgb(179, 145, 199);
+}
+
+.rightcolumn {
+    margin: 0;
+    width: 724px;
+    /*height: 700px; */    
+    background-color: rgb(221, 203, 101);
+    float: right;
+    font-family: "Titillium-Regular";
+    font-size: 18px;
+    color:rgb(60, 37, 73);
+    /*display: flex;    
+    flex-direction: column; */
+}
+
+.rightcolumn h4 {
+    font-family: "Bitter-Bold";
+    font-size: 30px;
+    color: rgb(60, 37, 73);
+    text-align: left;
+    padding: 0px;
+    width: 500px;
+    height: 50px;    
+    margin: 70px 70px 10px 70px;
+}
+
+.line-right {
+    height: 10px;
+    width: 700px;
+    margin-left: 0px;
+    background-color:rgb(60, 37, 73);
+}
+
+.rightcolumn p {
+    font-size: 20px;
+    color:rgb(60, 37, 73);
+    margin: 10px 25px;
+}
+
+.rightcolumn strong {
+    font-size: 20px;
+}
+.hodor {
+    font-family: monospace;
+    font-size: 14px;
+  }
+
+.rightcolumn label {
+    border-bottom: 1px dashed rgb(60, 37, 73);
+    padding-bottom: 10px;
+}
+
+input[id^="spoiler"] {
+    display: none;
+}
+  
+input[id^="spoiler"]+label {
+    display: block;
+    cursor: pointer;
+    font-size: 16px;
+}
+  
+input[id^="spoiler"]:checked+label {
+    color: #333;
+}
+  
+input[id^="spoiler"]~.spoiler {
+    width: 90%;
+    height: 0;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color:  rgb(224, 211, 133);
+}
+  
+input[id^="spoiler"]:checked+label+.spoiler {
+    height: auto;
+    opacity: 1;
+    padding: 10px;
+}
